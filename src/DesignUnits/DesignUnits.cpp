@@ -5,6 +5,13 @@
  *      Author: Roger
  */
 
+/*
+ *
+ *  YOU NEED TO ADD THIS TO YOUR .PRO
+ *  LIBS += -lbbdevice
+ *
+ */
+
 #include <src/DesignUnits/DesignUnits.h>
 
 DesignUnits::DesignUnits() :
