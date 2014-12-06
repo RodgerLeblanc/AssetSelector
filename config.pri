@@ -41,11 +41,14 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/12ppd/SystemToastQML.qml) \
         $$quote($$BASEDIR/assets/8ppd/SystemToastQML.qml) \
         $$quote($$BASEDIR/assets/9ppd/SystemToastQML.qml) \
+        $$quote($$BASEDIR/assets/ActionItemOnBarOrSignature.qml) \
         $$quote($$BASEDIR/assets/KeyboardListener.qml) \
         $$quote($$BASEDIR/assets/OptionOnlyVisibleForPassport.qml) \
         $$quote($$BASEDIR/assets/SystemToastQML.qml) \
         $$quote($$BASEDIR/assets/ThemeContainer.qml) \
+        $$quote($$BASEDIR/assets/images/ic_review.png) \
         $$quote($$BASEDIR/assets/main.qml) \
+        $$quote($$BASEDIR/assets/mindw0h0du/ActionItemOnBarOrSignature.qml) \
         $$quote($$BASEDIR/assets/mindw0h0du/KeyboardListener.qml) \
         $$quote($$BASEDIR/assets/mindw0h0du/SystemToastQML.qml) \
         $$quote($$BASEDIR/assets/mindw0h0du/ThemeContainer.qml)
@@ -100,6 +103,9 @@ lupdate_inclusion {
         $$quote($$BASEDIR/../assets/9ppd/*.qml) \
         $$quote($$BASEDIR/../assets/9ppd/*.js) \
         $$quote($$BASEDIR/../assets/9ppd/*.qs) \
+        $$quote($$BASEDIR/../assets/images/*.qml) \
+        $$quote($$BASEDIR/../assets/images/*.js) \
+        $$quote($$BASEDIR/../assets/images/*.qs) \
         $$quote($$BASEDIR/../assets/mindw0h0du/*.qml) \
         $$quote($$BASEDIR/../assets/mindw0h0du/*.js) \
         $$quote($$BASEDIR/../assets/mindw0h0du/*.qs)

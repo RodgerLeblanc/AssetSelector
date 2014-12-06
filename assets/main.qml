@@ -17,6 +17,22 @@
 import bb.cascades 1.2
 
 Page {
+    actions: [
+        ActionItemOnBarOrSignature {}
+    ]
+    
+    attachedObjects: [
+        Invocation {
+            id: invoke
+            query {
+                invokeTargetId: "sys.appworld"
+            }
+            onArmed: {
+                trigger("bb.action.OPEN")
+            }
+        }
+    ]
+    
     Container {
         topPadding: _ui.du(3)
         leftPadding: topPadding

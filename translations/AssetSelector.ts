@@ -2,6 +2,15 @@
 <!DOCTYPE TS>
 <TS version="2.0">
 <context>
+    <name>ActionItemOnBarOrSignature</name>
+    <message>
+        <location filename="../assets/ActionItemOnBarOrSignature.qml" line="4"/>
+        <location filename="../assets/mindw0h0du/ActionItemOnBarOrSignature.qml" line="4"/>
+        <source>Review</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ThemeContainer</name>
     <message>
         <location filename="../assets/ThemeContainer.qml" line="7"/>
