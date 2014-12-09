@@ -46,12 +46,14 @@ config_pri_assets {
         $$quote($$BASEDIR/assets/OptionOnlyVisibleForPassport.qml) \
         $$quote($$BASEDIR/assets/SystemToastQML.qml) \
         $$quote($$BASEDIR/assets/ThemeContainer.qml) \
+        $$quote($$BASEDIR/assets/cover/AppCover.qml) \
         $$quote($$BASEDIR/assets/images/ic_review.png) \
         $$quote($$BASEDIR/assets/main.qml) \
         $$quote($$BASEDIR/assets/mindw0h0du/ActionItemOnBarOrSignature.qml) \
         $$quote($$BASEDIR/assets/mindw0h0du/KeyboardListener.qml) \
         $$quote($$BASEDIR/assets/mindw0h0du/SystemToastQML.qml) \
-        $$quote($$BASEDIR/assets/mindw0h0du/ThemeContainer.qml)
+        $$quote($$BASEDIR/assets/mindw0h0du/ThemeContainer.qml) \
+        $$quote($$BASEDIR/assets/mindw0h0du/cover/AppCover.qml)
 }
 
 config_pri_source_group1 {
@@ -103,12 +105,18 @@ lupdate_inclusion {
         $$quote($$BASEDIR/../assets/9ppd/*.qml) \
         $$quote($$BASEDIR/../assets/9ppd/*.js) \
         $$quote($$BASEDIR/../assets/9ppd/*.qs) \
+        $$quote($$BASEDIR/../assets/cover/*.qml) \
+        $$quote($$BASEDIR/../assets/cover/*.js) \
+        $$quote($$BASEDIR/../assets/cover/*.qs) \
         $$quote($$BASEDIR/../assets/images/*.qml) \
         $$quote($$BASEDIR/../assets/images/*.js) \
         $$quote($$BASEDIR/../assets/images/*.qs) \
         $$quote($$BASEDIR/../assets/mindw0h0du/*.qml) \
         $$quote($$BASEDIR/../assets/mindw0h0du/*.js) \
-        $$quote($$BASEDIR/../assets/mindw0h0du/*.qs)
+        $$quote($$BASEDIR/../assets/mindw0h0du/*.qs) \
+        $$quote($$BASEDIR/../assets/mindw0h0du/cover/*.qml) \
+        $$quote($$BASEDIR/../assets/mindw0h0du/cover/*.js) \
+        $$quote($$BASEDIR/../assets/mindw0h0du/cover/*.qs)
 
     HEADERS += \
         $$quote($$BASEDIR/../src/*.h) \

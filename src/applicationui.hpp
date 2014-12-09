@@ -42,9 +42,13 @@ class ApplicationUI : public QObject
 public:
     ApplicationUI();
     virtual ~ApplicationUI() {}
+
 private slots:
     void onSystemLanguageChanged();
+
 private:
+    void addApplicationCover();
+
     QTranslator* m_pTranslator;
     bb::cascades::LocaleHandler* m_pLocaleHandler;
 

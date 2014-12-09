@@ -30,8 +30,20 @@ Page {
             onArmed: {
                 trigger("bb.action.OPEN")
             }
+        },
+        ComponentDefinition {
+            id: activeFrame
+            // This source will default to 'asset:///cover/AppCover.qml' (SceneCover)
+            // for 10.2 users and 'asset:///mindw0h0du/cover/AppCover.qml' (MultiCover)
+            // for 10.3 users
+            source: "asset:///cover/AppCover.qml"
         }
     ]
+    
+    onCreationCompleted: {
+        // Creates a MultiCover or SceneCover depending on asset selection
+        Application.setCover(activeFrame.createObject())
+    }
     
     Container {
         topPadding: _ui.du(3)
