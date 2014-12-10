@@ -28,13 +28,16 @@ DesignUnits::~DesignUnits()
 int DesignUnits::du(const double& units) {
     QString modelName = thisDevice->modelName();
 
-    if (modelName == "Passport")
+    // This function uses contains() because the Simulator will not return the exact
+    // same values as real devices, so this method will support Simulator if you
+    // happen to use it to debug your app.
+    if (modelName.contains("Passport"))
         return (12 * units);
-    else if ((modelName == "Z10") || (modelName.contains("P'9982")))
+    else if ((modelName.contains("Z10")) || (modelName.contains("9982")))
         return (10 * units);
-    else if ((modelName == "Q10") || (modelName == "Q5") || (modelName.contains("P'9983")))
+    else if ((modelName.contains("Q10")) || (modelName.contains("Q5")) || (modelName.contains("9983")))
         return (9 * units);
-    else if ((modelName == "Z30") || (modelName == "Z3") || (modelName == "Classic"))
+    else if ((modelName.contains("Z30")) || (modelName.contains("Z3")) || (modelName.contains("Classic")))
         return (8 * units);
     else return (10 * units);
 }
