@@ -21,6 +21,9 @@
 #include <bb/cascades/AbstractPane>
 #include <bb/cascades/LocaleHandler>
 
+#include <bb/cascades/SceneCover>
+#include <bb/cascades/AbstractCover>
+
 using namespace bb::cascades;
 
 ApplicationUI::ApplicationUI() :
@@ -41,6 +44,9 @@ ApplicationUI::ApplicationUI() :
 
     // initial load
     onSystemLanguageChanged();
+
+    qmlRegisterType<SceneCover>("bb.cascades", 1, 2, "SceneCover");
+    qmlRegisterUncreatableType<AbstractCover>("bb.cascades", 1, 2, "AbstractCover", "");
 
     // Create scene document from main.qml asset, the parent is set
     // to ensure the document gets destroyed properly at shut down.
