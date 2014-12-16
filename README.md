@@ -2,6 +2,13 @@ Asset selector (beginner)
 --------------
 BB10 sample app that shows how to support or mimic 10.3 features in a 10.2 app.
 
+List of supported feature :
+- Design Units
+- Theme selection applied automatically for 10.3 users, after restart for 10.2 users)
+- MultiCover for 10.3 users, SceneCover for 10.2 users
+- Touch-enabled keyboard support
+- ActionItem on signature for 10.3 users, on bar for 10.2 users
+
 This idea comes from Derek Konigsberg' blog post :
 http://hecgeek.blogspot.ca/2014/10/blackberry-10-multiple-os-versions-from.html
 
