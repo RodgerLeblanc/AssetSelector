@@ -2,7 +2,7 @@ Asset selector (beginner)
 --------------
 BB10 sample app that shows how to support or mimic 10.3 features in a 10.2 app.
 
-List of supported feature :
+List of supported feature from a 10.2 build :
 - Design Units
 - Theme selection applied automatically for 10.3 users, after restart for 10.2 users)
 - MultiCover for 10.3 users, SceneCover for 10.2 users
